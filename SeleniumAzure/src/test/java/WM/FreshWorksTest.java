@@ -60,7 +60,7 @@ public class FreshWorksTest {
 	public void freshWorksTitleTest() {
 		System.out.println("running title test...");
 		System.out.println(driver.getTitle());
-		assertEquals(driver.getTitle(), "Facebook – log in or sign up");
+		assertEquals(driver.getTitle(), "Facebook - log in or sign up");
 	}
 
 
