@@ -57,10 +57,17 @@ public class FreshWorksTest {
 
 	
 	@Test(priority = 1)
-	public void freshWorksTitleTest() {
+	public void Righttitle() {
 		System.out.println("running title test...");
 		System.out.println(driver.getTitle());
 		assertEquals(driver.getTitle(), "Facebook - log in or sign up");
+	}
+
+	@Test(priority = 2)
+	public void Wrongtitle() {
+		System.out.println("running title test...");
+		System.out.println(driver.getTitle());
+		assertEquals(driver.getTitle(), "Facebook");
 	}
 
 
