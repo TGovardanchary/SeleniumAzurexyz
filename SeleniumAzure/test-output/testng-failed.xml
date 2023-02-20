@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Test automtion regression suite]" parallel="tests">
+  <test thread-count="3" name="Freshworks - Firefox test(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="WM.FreshWorksTest">
+        <methods>
+          <include name="freshWorkslogoTest"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="getFooterLinksTest"/>
+          <include name="freshWorksTitleTest"/>
+        </methods>
+      </class> <!-- WM.FreshWorksTest -->
+    </classes>
+  </test> <!-- Freshworks - Firefox test(failed) -->
+  <test thread-count="3" name="Freshworks - Chrome test(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="WM.FreshWorksTest">
+        <methods>
+          <include name="freshWorkslogoTest"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="getFooterLinksTest"/>
+          <include name="freshWorksTitleTest"/>
+        </methods>
+      </class> <!-- WM.FreshWorksTest -->
+    </classes>
+  </test> <!-- Freshworks - Chrome test(failed) -->
+</suite> <!-- Failed suite [Test automtion regression suite] -->
